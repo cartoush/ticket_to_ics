@@ -1,0 +1,9 @@
+[package]
+name = "ticket_to_ics"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pdf-extract = "0.8.2"
+ollama-rs = "0.2.6"
+async-std = {version = "1.13.0", features = ["attributes", "tokio1"]}
