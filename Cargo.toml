@@ -12,3 +12,15 @@ tokio = "1.48.0"
 anyhow = "1.0.100"
 notify = "8.2.0"
 ocr-rs = "2.0.2"
+
+[[bin]]
+name = "daemon"
+path = "daemon/main.rs"
+
+[[bin]]
+name = "cli"
+path = "cli/main.rs"
+
+[[bin]]
+name = "web"
+path = "web/main.rs"

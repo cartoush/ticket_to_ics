@@ -53,7 +53,10 @@ async fn main() -> anyhow::Result<()> {
     // }
     // Ok(())
     //
-    let ocr_res = ocr_do(&engine, &"XXXXXX.pdf".to_string())?;
+    let ocr_res = ocr_do(
+        &engine,
+        &"/home/artis/Downloads/Aymericlompret.pdf".to_string(),
+    )?;
     let lines = ocr_to_string(ocr_res)?;
     openrouter_ocr_result_to_relevant_info(&client, &model, &lines).await?;
     Ok(())
